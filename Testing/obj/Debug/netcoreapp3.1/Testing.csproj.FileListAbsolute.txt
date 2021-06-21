@@ -1,0 +1,12 @@
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.exe
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.deps.json
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.runtimeconfig.json
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.runtimeconfig.dev.json
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.dll
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.pdb
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.AssemblyInfoInputs.cache
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.AssemblyInfo.cs
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.csproj.CoreCompileInputs.cache
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.dll
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.pdb
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.genruntimeconfig.cache
