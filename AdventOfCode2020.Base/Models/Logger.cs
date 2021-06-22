@@ -101,8 +101,8 @@ namespace AdventOfCode2020.Base.Models
         /// <summary>
         /// Functaion to Take all log info and analyze it
         /// </summary>
-        /// <param name="level"> using to select wich type or level the Log</param>
-        /// <param name="text">using to push the massage to writeing in log file </param>
+        /// <param name="level"> select wich type or level the Log</param>
+        /// <param name="text"> massage to writeing in log file </param>
         private void WriteLogByType(LogType level, string text)
         {
             //Switch To select What the log type and what Name && When happend
