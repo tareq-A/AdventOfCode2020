@@ -1,15 +1,20 @@
-﻿using System;
-
+﻿
+using AdventOfCode2020.Base.Helper;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 namespace Testing
 {
-    class Program
+    public class Program 
     {
+    
         static void Main(string[] args)
         {
-             /*
-             byr,iyr, eyr, hgt, hcl, ecl, pid, cid,
-             */
-
+            //
+            Console.ReadKey();
         }
     }
 }

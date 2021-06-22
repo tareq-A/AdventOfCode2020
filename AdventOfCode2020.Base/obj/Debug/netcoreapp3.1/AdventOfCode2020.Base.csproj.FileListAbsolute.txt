@@ -1,0 +1,9 @@
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\bin\Debug\netcoreapp3.1\AdventOfCode2020.Base.deps.json
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\bin\Debug\netcoreapp3.1\AdventOfCode2020.Base.dll
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\bin\Debug\netcoreapp3.1\AdventOfCode2020.Base.pdb
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\obj\Debug\netcoreapp3.1\AdventOfCode2020.Base.csproj.AssemblyReference.cache
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\obj\Debug\netcoreapp3.1\AdventOfCode2020.Base.AssemblyInfoInputs.cache
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\obj\Debug\netcoreapp3.1\AdventOfCode2020.Base.AssemblyInfo.cs
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\obj\Debug\netcoreapp3.1\AdventOfCode2020.Base.csproj.CoreCompileInputs.cache
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\obj\Debug\netcoreapp3.1\AdventOfCode2020.Base.dll
+T:\Git\AdventOfCode2020\AdventOfCode2020.Base\obj\Debug\netcoreapp3.1\AdventOfCode2020.Base.pdb
