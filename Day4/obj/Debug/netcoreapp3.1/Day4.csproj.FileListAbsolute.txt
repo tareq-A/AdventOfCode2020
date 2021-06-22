@@ -10,3 +10,4 @@ T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.csproj.CoreCompileInpu
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.dll
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.pdb
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.genruntimeconfig.cache
+T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.csproj.AssemblyReference.cache

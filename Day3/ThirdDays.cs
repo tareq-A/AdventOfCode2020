@@ -15,7 +15,7 @@ namespace Day3
             int CountTress = _input.Select(t => t.Equals('#')).Count();
              
             //----1-----
-            Solv1();
+            Solv2();
             #region Solution 1
             void Solv1()
                     {
@@ -32,6 +32,22 @@ namespace Day3
                         }
                         Console.WriteLine(Tress.ToString());
                     }
+            #endregion
+            #region Solution 1
+            void Solv2()
+            {
+                long Totle = 0;
+                int xlen = _input.First().Length;
+                int Tress = 0;
+                HashSet<int> Slops = new HashSet<int> { 1,1 ,3,1,5, 1 , 7, 1 , 1, 2 };
+                for (int R = 0; R < _input.Count; R++)
+                {
+                    if (R == xlen) {R = 0; }
+                    Slops.TryGetValue(R, out int D);
+                    if (_input[R][D] == '#') Tress++;
+                }
+                Console.WriteLine(Tress.ToString());
+            }
             #endregion
         }
     }

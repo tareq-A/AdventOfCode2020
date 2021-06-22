@@ -10,3 +10,4 @@ T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.csproj.CoreCompi
 T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.dll
 T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.pdb
 T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.genruntimeconfig.cache
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.csproj.AssemblyReference.cache

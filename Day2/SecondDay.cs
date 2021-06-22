@@ -19,8 +19,8 @@ namespace Day2
             {
                 GetValueFromString(line);
 
-                /*  Part 1 */  // CheckIfVailadPart1(Min,Max,key,Password);
-                /*  Part 2 */  // CheckIfVailadPart2(Min,Max,key,Password);
+                /*  Part 1 */   //CheckIfVailadPart1(Min,Max,key,Password);
+                /*  Part 2 */   CheckIfVailadPart2(Min,Max,key,Password);
             }
 
             void GetValueFromString(string input)
@@ -64,10 +64,10 @@ namespace Day2
                 bool max1 = pass[max - 1] == CharToFind;
                 if (min1 ^ max1)
                 {
-                    Console.WriteLine(pass, min1, max1);
+                    Console.WriteLine($"{pass}\n{CharToFind}  {min}={pass[min - 1]} {max}={pass[max - 1]}");
                     Passcounter++;
                 }
-                //Console.WriteLine($"{pass}\n{CharToFind}  {min}={pass[min-1]} {max}={pass[max-1]}");
+                
 
             }
             #endregion
