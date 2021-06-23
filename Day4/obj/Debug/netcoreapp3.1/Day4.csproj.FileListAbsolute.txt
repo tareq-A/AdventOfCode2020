@@ -4,10 +4,10 @@ T:\Git\AdventOfCode2020\Day4\bin\Debug\netcoreapp3.1\Day4.runtimeconfig.json
 T:\Git\AdventOfCode2020\Day4\bin\Debug\netcoreapp3.1\Day4.runtimeconfig.dev.json
 T:\Git\AdventOfCode2020\Day4\bin\Debug\netcoreapp3.1\Day4.dll
 T:\Git\AdventOfCode2020\Day4\bin\Debug\netcoreapp3.1\Day4.pdb
+T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.csproj.AssemblyReference.cache
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.AssemblyInfoInputs.cache
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.AssemblyInfo.cs
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.csproj.CoreCompileInputs.cache
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.dll
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.pdb
 T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.genruntimeconfig.cache
-T:\Git\AdventOfCode2020\Day4\obj\Debug\netcoreapp3.1\Day4.csproj.AssemblyReference.cache

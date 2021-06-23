@@ -1,78 +1,49 @@
-﻿using System;
+﻿using AdventOfCode2020.Base.Interface;
+using AdventOfCode2020.Base.Models;
+using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace Day2
 {
-    class SecondDay
+    public class SecondDay : Day
     {
-        static void Main(string[] args)
+        #region 
+        static Day NewDay = new Day("Day2");
+        public new List<int> Datanumber = NewDay.Datanumber;
+        public new List<string> DataString = NewDay.DataString;
+        #endregion
+
+        #region Private member
+        //declare New Min replace Char And Max Replace
+        private int Min = 0, Max = 0;
+        //var well hold the char that we looking for
+        private char key = ' ';
+        //that sting we will serach efter the char in
+        private string Password = " ";
+        #endregion
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns> string type if </returns>
+        #region Soluation1
+        public override string Soluation1()
         {
-            string InputFilePath = Directory.GetCurrentDirectory() + @"\PuzzleInput.txt";
-            string[] FromFile = File.ReadAllLines(InputFilePath);
-            int Passcounter = 0;
-            int Min = 0, Max = 0;
-            char key = ' ';
-            string Password = " ";
-
-
-            foreach (string line in FromFile)
-            {
-                GetValueFromString(line);
-
-                /*  Part 1 */   //CheckIfVailadPart1(Min,Max,key,Password);
-                /*  Part 2 */   CheckIfVailadPart2(Min,Max,key,Password);
-            }
-
-            void GetValueFromString(string input)
-            {
-                // Input :  "1-3 a: abcd"
-                string[] splitInput = input.Split();
-                string[] bounds = splitInput[0].Split("-");
-                Password = splitInput[2];
-                key = splitInput[1][0];
-                Min = Convert.ToInt32(bounds[0]);
-                Max = Convert.ToInt32(bounds[1]);
-            }
-
-            Console.WriteLine(Passcounter);
-
-            #region Solve1
-            void CheckIfVailadPart1(int min, int max, char CharToFind, string pass)
-            {
-                int counter = 0;
-                bool Isvalid = false;
-                foreach (char c in pass)
-                {
-                    if (c == CharToFind)
-                    {
-                        counter++;
-                    }
-                }
-                if (counter <= max && counter >= min)
-                {
-                    Isvalid = true;
-                    Console.WriteLine(pass + " \\ Status : " + Isvalid);
-                    Passcounter++;
-                }
-            }
-            #endregion
-
-            #region Solve2
-            void CheckIfVailadPart2(int min, int max, char CharToFind, string pass)
-            {
-                bool min1 = pass[min - 1] == CharToFind;
-                bool max1 = pass[max - 1] == CharToFind;
-                if (min1 ^ max1)
-                {
-                    Console.WriteLine($"{pass}\n{CharToFind}  {min}={pass[min - 1]} {max}={pass[max - 1]}");
-                    Passcounter++;
-                }
-                
-
-            }
-            #endregion
-            
-            Console.ReadLine();
+            return $": {} : {} : {}";
         }
+        #endregion
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        #region Soluation2
+        public override string Soluation2()
+        {
+            //Display the numbers with summation && and 
+            return $": {} : {} : {}  ";
+        }
+        #endregion
     }
 }

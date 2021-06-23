@@ -7,7 +7,6 @@ namespace AdventOfCode2020.Base.Interface
     public interface ILogger
     {
         
-
         /// <summary>
         /// Display a Debug message
         /// </summary>

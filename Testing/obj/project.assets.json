@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/AdventOfCode2020.Base.dll": {}
         }
+      },
+      "Day1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AdventOfCode2020.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Day1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Day1.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../AdventOfCode2020.Base/AdventOfCode2020.Base.csproj",
       "msbuildProject": "../AdventOfCode2020.Base/AdventOfCode2020.Base.csproj"
+    },
+    "Day1/1.0.0": {
+      "type": "project",
+      "path": "../Day1/Day1.csproj",
+      "msbuildProject": "../Day1/Day1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "AdventOfCode2020.Base >= 1.0.0"
+      "AdventOfCode2020.Base >= 1.0.0",
+      "Day1 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -60,6 +79,9 @@
           "projectReferences": {
             "T:\\Git\\AdventOfCode2020\\AdventOfCode2020.Base\\AdventOfCode2020.Base.csproj": {
               "projectPath": "T:\\Git\\AdventOfCode2020\\AdventOfCode2020.Base\\AdventOfCode2020.Base.csproj"
+            },
+            "T:\\Git\\AdventOfCode2020\\Day1\\Day1.csproj": {
+              "projectPath": "T:\\Git\\AdventOfCode2020\\Day1\\Day1.csproj"
             }
           }
         }
