@@ -7,6 +7,10 @@
     <StartupObject />
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>T:\Git\AdventOfCode2020\Day1\Day1.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\AdventOfCode2020.Base\AdventOfCode2020.Base.csproj" />
   </ItemGroup>

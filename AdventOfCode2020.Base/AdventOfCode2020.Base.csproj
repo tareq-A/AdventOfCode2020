@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>T:\Git\AdventOfCode2020\AdventOfCode2020.Base\AdventOfCode2020.Base.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>

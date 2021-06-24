@@ -4,8 +4,11 @@ using System.Text;
 
 namespace AdventOfCode2020.Base.Interface
 {
-    public interface IHelper<T>
+    /// <summary>
+    /// 
+    /// </summary>
+    public interface IHelper
     {
-        public List<IEnumerable<T>> GetTheKeysBySpiltSpace(string input);
+       
     }
 }

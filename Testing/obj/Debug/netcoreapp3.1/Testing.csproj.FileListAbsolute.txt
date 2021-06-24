@@ -1,3 +1,7 @@
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.csproj.AssemblyReference.cache
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.AssemblyInfoInputs.cache
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.AssemblyInfo.cs
+T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.csproj.CoreCompileInputs.cache
 T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.exe
 T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.deps.json
 T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Testing.runtimeconfig.json
@@ -8,11 +12,12 @@ T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\AdventOfCode2020.Base.dl
 T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Day1.dll
 T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\AdventOfCode2020.Base.pdb
 T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Day1.pdb
-T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.csproj.AssemblyReference.cache
-T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.AssemblyInfoInputs.cache
-T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.AssemblyInfo.cs
-T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.csproj.CoreCompileInputs.cache
 T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.csproj.CopyComplete
 T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.dll
 T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.pdb
 T:\Git\AdventOfCode2020\Testing\obj\Debug\netcoreapp3.1\Testing.genruntimeconfig.cache
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\AdventOfCode2020.Base.xml
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Day1.xml
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Day2.dll
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Day2.pdb
+T:\Git\AdventOfCode2020\Testing\bin\Debug\netcoreapp3.1\Day2.xml

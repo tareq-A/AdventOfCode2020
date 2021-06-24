@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "Day2/1.0.0": {
+        "dependencies": {
+          "AdventOfCode2020.Base": "1.0.0"
+        },
         "runtime": {
           "Day2.dll": {}
+        }
+      },
+      "AdventOfCode2020.Base/1.0.0": {
+        "runtime": {
+          "AdventOfCode2020.Base.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Day2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AdventOfCode2020.Base/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

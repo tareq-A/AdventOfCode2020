@@ -3,9 +3,13 @@ using AdventOfCode2020.Base.Interface;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AdventOfCode2020.Base.Models
 {
+    /// <summary>
+    /// Day is Base Class And has Interface 
+    /// </summary>
     public class Day : IDay
     {
         #region Private Member
@@ -20,20 +24,45 @@ namespace AdventOfCode2020.Base.Models
         #endregion
 
         #region Public Member
-        //DataNumber Box&unBoxing To read data from Prviate properties to the inherited class
+        ///DataNumber To read data from Prviate properties to the inherited class
         public List<int> Datanumber { get => _Datanumber; set => _Datanumber=value; }
-        //DataNumber Box&unBoxing To read data from Prviate properties to the inherited class
+
+        ///DataNumber To read data from Prviate properties to the inherited class
         public List<string> DataString { get => _DataString; set => _DataString=value; }
 
-        //declare Soluations1 as virtual Method return string for override it in the inherited class 
-        public virtual string Soluation1()
+        FileReader Reader;
+        ///declare Soluations1 as virtual Method return string for override it in the inherited class 
+        public async Task<string> Soluation1()
         {
+            await Task.Run(() => {
+
+            });
+            return " w";
+        }
+
+        ///declare Soluations2 as virtual Method return string for override it in the inherited class 
+        public async Task<string> Soluation2()
+        {
+            await Task.Run(() => { 
+            
+            });
             return string.Empty;
         }
-        //declare Soluations2 as virtual Method return string for override it in the inherited class 
-        public virtual string Soluation2()
+
+        /// <summary>
+        /// Initialization AsyncTask Call in Constractor to init and fill all fild och prop  
+        /// </summary>
+        /// <returns></returns>
+        public async Task Initialization(string DayName)
         {
-            return string.Empty;
+            
+            await Task.Run(async () =>
+            {
+                Reader = new FileReader(DayName);
+                _Datanumber = await Reader.ReadNumbers();
+                _DataString = await Reader.ReadString();
+                
+            });
         }
         #endregion
 
@@ -44,11 +73,9 @@ namespace AdventOfCode2020.Base.Models
         /// <param name="DayName">using to select the Day and push it to File reader to Read the data</param>
         public Day(string DayName)
         {
-             FileReader Reader = new FileReader(DayName);
-            _Datanumber = Reader.ReadNumbers();
-            _DataString = Reader.ReadString();
-            Console.WriteLine($"Soluations To the Day: {DayName}");
+            Task.WaitAll(Initialization(DayName));
         }
+
         /// <summary>
         /// Default Constractor for inhirit
         /// </summary>

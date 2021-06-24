@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AdventOfCode2020.Base</name>
+    </assembly>
+    <members>
+        <member name="T:AdventOfCode2020.Base.Helper.FileReader">
+            <summary>
+            FileReader Helping with read data from file and we can add services as reading from Api ,CSV,Xml as we need 
+            
+            </summary>
+        </member>
+        <member name="F:AdventOfCode2020.Base.Helper.FileReader.logger">
+            Declare Logger to follow the app if has happen bugs we can catch it
+        </member>
+        <member name="P:AdventOfCode2020.Base.Helper.FileReader.FILENAME">
+            FileName Prop to hold the day name as User send it to Constractor
+        </member>
+        <member name="M:AdventOfCode2020.Base.Helper.FileReader.#ctor(System.String)">
+            Default Constructer to get file name and push to FILENAME FIld
+        </member>
+        <member name="M:AdventOfCode2020.Base.Helper.FileReader.ReadNumbers">
+            <summary>
+            <!--funcations read the Input from File and convert lines to list<int>-->
+            </summary>
+            <returns> Well returns ListInt </returns>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Helper.FileReader.ReadString">
+            <summary>
+            <!--funcations to read the Input from File and Add the lines to list<String>-->
+            </summary>
+            <returns>Well returns ListString</returns>
+        </member>
+        <member name="T:AdventOfCode2020.Base.Helper.HelperWithString">
+            <summary>
+            I Helper Class 
+            </summary>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Helper.HelperWithString.GetPassFromString(System.String)">
+            <summary>
+            uing this Method with Day1 to defind all param from string 
+            </summary>
+            <param name="input"> Input string From Ui</param>
+            <returns> Password type  </returns>
+        </member>
+        <member name="T:AdventOfCode2020.Base.Interface.IDay">
+            <summary>
+            Day interface have two lists as defernt input date String |and| int
+            task Initialization to start up the class and inin all fild and load data to them
+            Soluation1 and Soluation2 in them Tasks we will implementions the Soluations for Questions
+            </summary>
+        </member>
+        <member name="P:AdventOfCode2020.Base.Interface.IDay.Datanumber">
+            DataNumber Prop As List int to get and set date from Filereader Data as lsit of Interger
+        </member>
+        <member name="P:AdventOfCode2020.Base.Interface.IDay.DataString">
+            DataString Prop As List of string to get and set date from FilereaderData as lsit of String
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.IDay.Initialization(System.String)">
+            using this Task to stand up the Class in The Constractor 
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.IDay.Soluation1">
+            using this Task to Defind Soluation 1 
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.IDay.Soluation2">
+            using this Task to Defind Soluation 2
+        </member>
+        <member name="T:AdventOfCode2020.Base.Interface.IFileReader">
+            <summary>
+            InterFace for FileReader where the class reading the data from file
+            have to Tasks to read the Data as String and read as Int
+            </summary>
+        </member>
+        <member name="P:AdventOfCode2020.Base.Interface.IFileReader.FILENAME">
+            Filed To proccess File Path 
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.IFileReader.ReadNumbers">
+            Funcation to read data and convert to list int
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.IFileReader.ReadString">
+            <summary>
+            <!--Funcation to read data and Add to list<String>-->
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AdventOfCode2020.Base.Interface.IHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AdventOfCode2020.Base.Interface.ILogger">
+            <summary>
+            ILogger Interface Helping you to define the bugs and select where when and how bugs come 
+            you can fund the .Log file in CurrentDirectory
+            </summary>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.ILogger.Debug(System.String)">
+            <summary>
+            Display a Debug message
+            </summary>
+            <param name="text">Message</param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.ILogger.Trace(System.String)">
+            <summary>
+            Display a TRACE message
+            </summary>
+            <param name="text">Message</param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.ILogger.Info(System.String)">
+            <summary>
+            Display an INFO message
+            </summary>
+            <param name="text">Message</param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.ILogger.Warning(System.String)">
+            <summary>
+            Display a WARNING message
+            </summary>
+            <param name="text">Message</param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.ILogger.Error(System.String)">
+            <summary>
+            Display an ERROR message
+            </summary>
+            <param name="text">Message</param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.ILogger.Initialization">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Interface.ILogger.LoggerWriter(System.String,System.Boolean)">
+            <summary>
+            using the functaion to write message incoming to log file
+            </summary>
+            <param name="text"></param>
+            /// <param name="append"></param>
+        </member>
+        <member name="T:AdventOfCode2020.Base.Models.Day">
+            <summary>
+            Day is Base Class And has Interface 
+            </summary>
+        </member>
+        <member name="F:AdventOfCode2020.Base.Models.Day._Datanumber">
+            <summary>
+            declare List of int this well hold the data when we push the arg to Constractor
+            </summary>
+        </member>
+        <member name="F:AdventOfCode2020.Base.Models.Day._DataString">
+            <summary>
+            declare List of string this well hold the data when we push the arg to Constractor
+            </summary>
+        </member>
+        <member name="P:AdventOfCode2020.Base.Models.Day.Datanumber">
+            DataNumber To read data from Prviate properties to the inherited class
+        </member>
+        <member name="P:AdventOfCode2020.Base.Models.Day.DataString">
+            DataNumber To read data from Prviate properties to the inherited class
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Day.Soluation1">
+            declare Soluations1 as virtual Method return string for override it in the inherited class 
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Day.Soluation2">
+            declare Soluations2 as virtual Method return string for override it in the inherited class 
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Day.Initialization(System.String)">
+            <summary>
+            Initialization AsyncTask Call in Constractor to init and fill all fild och prop  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Day.#ctor(System.String)">
+            <summary>
+            Constractor to initlazie this Class with fill up data private member 
+            </summary>
+            <param name="DayName">using to select the Day and push it to File reader to Read the data</param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Day.#ctor">
+            <summary>
+            Default Constractor for inhirit
+            </summary>
+        </member>
+        <member name="T:AdventOfCode2020.Base.Models.Logger">
+            <summary>
+            Logger Class inhirt from inferface ILogger To using to Display many type of exeptions
+            </summary>
+        </member>
+        <member name="T:AdventOfCode2020.Base.Models.Logger.LogType">
+            <summary>
+            the Enum Determiine the nature of each of log
+            </summary>
+        </member>
+        <member name="F:AdventOfCode2020.Base.Models.Logger.LogType.DEBUG">
+            <summary>Log Debug</summary>
+        </member>
+        <member name="F:AdventOfCode2020.Base.Models.Logger.LogType.TRACE">
+            <summary>Log Trace</summary>
+        </member>
+        <member name="F:AdventOfCode2020.Base.Models.Logger.LogType.INFO">
+            <summary>Log Inforamtions</summary>
+        </member>
+        <member name="F:AdventOfCode2020.Base.Models.Logger.LogType.WARNING">
+            <summary>Log Warning</summary>
+        </member>
+        <member name="F:AdventOfCode2020.Base.Models.Logger.LogType.ERROR">
+            <summary>Log Error</summary>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.Debug(System.String)">
+            <summary>
+            log when Debuging 
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.Error(System.String)">
+            <summary>
+            log when Error 
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.Info(System.String)">
+            <summary>
+            log when Inforamtions 
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.Trace(System.String)">
+            <summary>
+            log when BugTracker 
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.Warning(System.String)">
+            <summary>
+            log when Display warning 
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.LoggerWriter(System.String,System.Boolean)">
+            <summary>
+            using the functaion to write message incoming to log file
+            </summary>
+            <param name="text"></param>
+            <param name="Invoke"></param>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.Initialization">
+            <summary>
+            Initialization AsyncTask Call in Constractor to init and fill all fild och prop  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.#ctor">
+            <summary>
+            Default Constractor 
+            </summary>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Logger.WriteLogByType(AdventOfCode2020.Base.Models.Logger.LogType,System.String)">
+            <summary>
+            Functaion to Take all log info and analyze it
+            </summary>
+            <param name="level"> select wich type or level the Log</param>
+            <param name="text"> massage to writeing in log file </param>
+        </member>
+        <member name="T:AdventOfCode2020.Base.Models.Password">
+            <summary>
+            Model using in First Question 
+            </summary>
+        </member>
+        <member name="P:AdventOfCode2020.Base.Models.Password.Pass">
+            <summary>Password Prop to hold Password from string efter we spliting string</summary>
+        </member>
+        <member name="P:AdventOfCode2020.Base.Models.Password.Key">
+            <summary>Key Prop to hold char from string efter we spliting string</summary>
+        </member>
+        <member name="P:AdventOfCode2020.Base.Models.Password.Min">
+            <summary>Min Prop to hold Minimn replace the key from string efter we spliting string</summary>
+        </member>
+        <member name="P:AdventOfCode2020.Base.Models.Password.Max">
+            <summary>Max Prop to hold Maximin replace the key from string efter we spliting string</summary>
+        </member>
+        <member name="M:AdventOfCode2020.Base.Models.Password.#ctor(System.String,System.Char,System.Int32,System.Int32)">
+            <summary>
+            Default Constractor 
+            <param name="pass">Initializa Password Datatype string efter spiling in Helper Class</param>
+            <param name="key">Initializa key Datatype char  efter spiling in Helper Class</param>
+            <param name="min">Initializa min Datatype int efter spiling in Helper Class</param>
+            <param name="max">Initializa max Datatype int  efter spiling in Helper Class</param>
+            /// </summary>
+        </member>
+    </members>
+</doc>

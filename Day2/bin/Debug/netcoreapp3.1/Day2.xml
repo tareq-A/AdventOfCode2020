@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Day2</name>
+    </assembly>
+    <members>
+        <member name="T:Day2.SecondDay">
+            <summary>
+            Soluation to the Day2 Questions Class SecondDay inhirit from class Day 
+            </summary>
+        </member>
+        <member name="F:Day2.SecondDay.NewDay">
+            <summary>Decalar A instanc from class Day</summary>
+        </member>
+        <member name="F:Day2.SecondDay.DataString">
+            <summary>Binde List string to the list int Class Day as we instanset</summary>
+        </member>
+        <member name="F:Day2.SecondDay.logger">
+            <summary>
+             Logger to using in our Class to display the Exception
+            </summary>
+        </member>
+        <member name="M:Day2.SecondDay.#cctor">
+            <summary>
+            Default Constractor
+            </summary>
+        </member>
+        <member name="M:Day2.SecondDay.StartUp">
+            <summary>Starting with pushing input string to helper for defind the keys what we need</summary>
+        </member>
+        <member name="M:Day2.SecondDay.Soluation1">
+            <summary>
+            Soluation 1 using Linq To figure the soluation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Day2.SecondDay.Soluation2">
+            <summary>
+            Soluation 2
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

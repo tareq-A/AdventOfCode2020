@@ -9,7 +9,8 @@
       "Testing/1.0.0": {
         "dependencies": {
           "AdventOfCode2020.Base": "1.0.0",
-          "Day1": "1.0.0"
+          "Day1": "1.0.0",
+          "Day2": "1.0.0"
         },
         "runtime": {
           "Testing.dll": {}
@@ -27,6 +28,14 @@
         "runtime": {
           "Day1.dll": {}
         }
+      },
+      "Day2/1.0.0": {
+        "dependencies": {
+          "AdventOfCode2020.Base": "1.0.0"
+        },
+        "runtime": {
+          "Day2.dll": {}
+        }
       }
     }
   },
@@ -42,6 +51,11 @@
       "sha512": ""
     },
     "Day1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Day2/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

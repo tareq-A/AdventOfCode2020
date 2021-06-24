@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Day1</name>
+    </assembly>
+    <members>
+        <member name="T:Day1.FirstDay">
+            <summary>
+            Inhirit From Class Day 
+            </summary>
+        </member>
+        <member name="F:Day1.FirstDay.NewDay">
+            Decalar A instanc from class Day
+        </member>
+        <member name="F:Day1.FirstDay.Datanumber">
+            Binde List int to the list int Class Day as we instanset
+        </member>
+        <member name="F:Day1.FirstDay.DataString">
+            Binde List string to the list int Class Day as we instanset
+        </member>
+        <member name="F:Day1.FirstDay.Num1">
+            three variables to using in loop time
+        </member>
+        <member name="F:Day1.FirstDay.Num2">
+            three variables to using in loop time
+        </member>
+        <member name="F:Day1.FirstDay.Num3">
+            three variables to using in loop time
+        </member>
+        <member name="M:Day1.FirstDay.#ctor">
+            <summary>
+            Default Constractor 
+            </summary>
+        </member>
+        <member name="M:Day1.FirstDay.Soluation1">
+            <summary>
+            the Soluations two using 2 for loop to found the 2 numbers =2020 with if to check sum both numbers if =2020
+            that many ways to using Linq,Hashset,Linklist..
+            new keyword mean at we dont care what happen in Base class "implementions Igrone"
+            using Task Async wait the result and dont block the app or another block
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Day1.FirstDay.Soluation2">
+            <summary>
+            the Soluations two using 3 for loop to found the 3 numbers =2020
+            that many ways to using Linq,Hashset,Linklist..
+            new keyword mean at we dont care what happen in Base class "implementions Igrone"
+            using Task Async wait the result and dont block the app or another block
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

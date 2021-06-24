@@ -9,73 +9,87 @@ using System.Threading.Tasks;
 
 namespace Day1
 {
-    //Inhirit From Class Day 
-    public class FirstDay : Day
+    /// <summary>
+    /// Inhirit From Class Day 
+    /// </summary>
+    public class FirstDay : Day, IDay
     {
-        //declare New constractor to the Day with pushing the para to Selet wich Data Day we need to read
-        static Day NewDay=new Day("Day1");
-        /// <summary>
-        /// declare List of int this well hold the data that coming from  Class Propety in baseClass
-        /// </summary>
-        public new List<int> Datanumber =NewDay.Datanumber;
+        ///Decalar A instanc from class Day
+        static readonly Day NewDay = new Day("Day1");
+        ///Binde List int to the list int Class Day as we instanset
+        public static new List<int> Datanumber = NewDay.Datanumber;
+        ///Binde List string to the list int Class Day as we instanset
+        public static new List<string> DataString = NewDay.DataString;
+
+        ///three variables to using in loop time
+        static int Num1 = 0, Num2 = 0, Num3 = 0;
 
         /// <summary>
-        /// declare List of string this well hold the data that coming from  Class Propety in baseClass
+        /// Default Constractor 
         /// </summary>
-        public new List<string> DataString = NewDay.DataString;
-
-        // init Varibel for usig on loop Time
-        int Num1 = 0, Num2 = 0, Num3 = 0;
-
-        /// <summary>
-        /// Soluations for find 2 numbers =2020 i using 2 for loop one start from 0 another one start from 1 using override to the base method
-        /// with If Statment for check if The number ==2020
-        /// </summary>
-        /// <returns> string type if </returns>
-        #region Soluation1
-        public override string Soluation1()
+        public FirstDay()
         {
-            for (int i = 0; i < Datanumber.Count; i++)
-            {
-                for (int T = i + 1; T < Datanumber.Count; T++)
-                {
-                    if (Datanumber[i] + Datanumber[T] == 2020)
-                    {
-                        Num1 = Datanumber[i];
-                        Num2 = Datanumber[T];
-                    }
-                }
-            }
-            return $"First Number: {Num1} +Second Number: {Num2} = {Num1+Num2}";
-        }
-        #endregion
 
+        }
         /// <summary>
-        /// Soluations for find 3 numbers =2020 i using 3 for loop one start from 0 another one start from 1 last one from 0 using override to the base method
-        /// with If Statment for check if The numbers == 2020
+        /// the Soluations two using 2 for loop to found the 2 numbers =2020 with if to check sum both numbers if =2020
+        /// that many ways to using Linq,Hashset,Linklist..
+        /// new keyword mean at we dont care what happen in Base class "implementions Igrone"
+        /// using Task Async wait the result and dont block the app or another block
         /// </summary>
         /// <returns></returns>
-        #region Soluation2
-        public override string Soluation2()
+        public new static async Task<string> Soluation1()
         {
-            for (int i = 0; i < Datanumber.Count; i++)
+            Console.WriteLine($"\nSoluations To the Day: {"Day1"}");
+            Console.WriteLine("---------Part1--------\n");
+            await Task.Run(() =>
             {
-                for (int T = i + 1; T < Datanumber.Count; T++)
+                Task.Delay(100);
+                for (int i = 0; i < Datanumber.Count; i++)
                 {
-                    for (int x = 0; x < Datanumber.Count; x++)
+                    for (int T = i + 1; T < Datanumber.Count; T++)
                     {
-                        if (Datanumber[i] + Datanumber[T] + Datanumber[x] == 2020)
+                        if (Datanumber[i] + Datanumber[T] == 2020)
                         {
                             Num1 = Datanumber[i];
                             Num2 = Datanumber[T];
-                            Num3 = Datanumber[x];
                         }
                     }
                 }
-            }
-            //Display the numbers with summation && and 
-            return $"First Number: {Num1} + Second Number: {Num2} + thirrd Number: {Num3} = {Num1 + Num2 + Num3} \nmultiplication :{Num1*Num2*Num3}";
+                Console.WriteLine($"\n {Num1} + {Num2} = {Num1 + Num2}\n");
+            });
+            return $" {Num1} + {Num2} = {Num1 + Num2}";
         }
-        #endregion
+        /// <summary>
+        /// the Soluations two using 3 for loop to found the 3 numbers =2020
+        /// that many ways to using Linq,Hashset,Linklist..
+        /// new keyword mean at we dont care what happen in Base class "implementions Igrone"
+        /// using Task Async wait the result and dont block the app or another block
+        /// </summary>
+        /// <returns></returns>
+        public new static async Task<string> Soluation2()
+        {
+            Console.WriteLine("\n---------Part2--------\n");
+            await Task.Run(() =>
+            {
+                for (int i = 0; i < Datanumber.Count; i++)
+                {
+                    for (int T = i + 1; T < Datanumber.Count; T++)
+                    {
+                        for (int x = 0; x < Datanumber.Count; x++)
+                        {
+                            if (Datanumber[i] + Datanumber[T] + Datanumber[x] == 2020)
+                            {
+                                Num1 = Datanumber[i];
+                                Num2 = Datanumber[T];
+                                Num3 = Datanumber[x];
+                            }
+                        }
+                    }
+                }
+                Console.WriteLine($"\n {Num1} + {Num2} + {Num3} = {Num1 + Num2 + Num3} \n \nmultiplication : {Num1 * Num2 * Num3}\n");
+            });
+            return $" {Num1} + {Num2} + {Num3} = {Num1 + Num2 + Num3} \n \nmultiplication : {Num1 * Num2 * Num3}";
+        }
     }
 }

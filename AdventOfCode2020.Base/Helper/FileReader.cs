@@ -8,62 +8,70 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2020.Base.Helper
 {
-
+    /// <summary>
+    /// FileReader Helping with read data from file and we can add services as reading from Api ,CSV,Xml as we need 
+    /// 
+    /// </summary>
     public class FileReader : IFileReader
     {
-        Logger logger = new Logger();
+        ///Declare Logger to follow the app if has happen bugs we can catch it
+        readonly Logger logger = new Logger();
 
-        public string FILENAME { get; set; }
+        private static readonly string path = Directory.GetCurrentDirectory().Replace("\\bin\\Debug\\netcoreapp3.1", "")+ @"\Data\";
 
-        //Default Constructer to get file name and push to FILENAME FIld
+        ///FileName Prop to hold the day name as User send it to Constractor
+        public string FILENAME { get; }
+
+        ///Default Constructer to get file name and push to FILENAME FIld
         public FileReader(string filename)
         {
             FILENAME = filename;
         }
 
         /// <summary>
-        /// funcations read the Input from File and convert lines to list<int>
+        /// <!--funcations read the Input from File and convert lines to list<int>-->
         /// </summary>
-        /// <returns>Well returns ListInt </returns>
-        public List<int> ReadNumbers()
+        /// <returns> Well returns ListInt </returns>
+        public async  Task<List<int>> ReadNumbers()
         {
             var numbers = new List<int>();
             try
             {
-                using (var sr = new StreamReader(FILENAME + ".txt"))
-                {
-                    string line;
-                    do
-                    {
-                        line = sr.ReadLine();
-                        if (string.IsNullOrEmpty(line)) continue;
+               await Task.Run(()=>{
+                   using var sr = new StreamReader($"{path}{FILENAME}.txt");
+                   string line;
+                   do
+                   {
+                       line = sr.ReadLine();
+                       if (string.IsNullOrEmpty(line)) continue;
 
-                        int.TryParse(line, out var number);
-                        numbers.Add(number);
-                        numbers.Add(number);
-                    } while (!string.IsNullOrEmpty(line));
-                }
+                       int.TryParse(line, out var number);
+                       numbers.Add(number);
+                       numbers.Add(number);
+                   } while (!string.IsNullOrEmpty(line));
+               });
                 return numbers;
             }
             catch (Exception ex)
             {
-                logger.WriteLogByType(Logger.LogType.ERROR,$" {ex.Message} {ex.InnerException} {ex.StackTrace}");
+               await logger.WriteLogByType(Logger.LogType.ERROR,$" {ex.Message} {ex.InnerException} {ex.StackTrace}");
             }
             finally { }
                 return  numbers;
         }
 
         /// <summary>
-        /// funcations to read the Input from File and Add the lines to list<String>
+        /// <!--funcations to read the Input from File and Add the lines to list<String>-->
         /// </summary>
         /// <returns>Well returns ListString</returns>
-        public List<string> ReadString()
+        public async Task<List<string>> ReadString()
         {
             var Text = new List<string>();
             try
             {
-                using (var sr = new StreamReader(FILENAME + ".txt"))
+                await Task.Run(() =>
                 {
+                    using var sr = new StreamReader($"{path}{FILENAME}.txt");
                     string line;
                     do
                     {
@@ -71,12 +79,12 @@ namespace AdventOfCode2020.Base.Helper
                         if (string.IsNullOrEmpty(line)) continue;
                         Text.Add(line);
                     } while (!string.IsNullOrEmpty(line));
-                    return Text;
-                }
+                });
+                return Text;
             }
             catch (Exception ex)
             {
-                logger.WriteLogByType(Logger.LogType.ERROR, ex.Message);
+               await logger.WriteLogByType(Logger.LogType.ERROR, ex.Message);
             }
             finally { }
             return Text;
